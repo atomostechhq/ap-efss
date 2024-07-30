@@ -1,0 +1,28 @@
+{
+  "name": "atomos-ap-efs",
+  "version": "1.0.0",
+  "description": "an enterprise file storage service",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "atomos-ap-efss",
+    "atomos",
+    "file",
+    "storage",
+    "service",
+    "aapefss"
+  ],
+  "author": "mayankpatel",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-async-errors": "^3.1.1",
+    "express-async-handler": "^1.2.0",
+    "multer": "^1.4.5-lts.1",
+    "winston": "^3.13.1"
+  }
+}
