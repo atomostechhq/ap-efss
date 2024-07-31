@@ -10,13 +10,17 @@ dotenv.config();
 const app = express();
 const port = process.env.PORT || 3000;
 
-const corsOptions = {
-  origin: "https://apefss.mirats.app",
-  methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
-  credentials: true,
-  optionSuccessStatus: 204,
-};
-app.use(cors(corsOptions));
+// TODO: WILL MAKE THIS UNCOMMENT WHEN WE ARE LIVE
+// const corsOptions = {
+//   origin: "https://apefss.mirats.app",
+//   methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
+//   credentials: true,
+//   optionSuccessStatus: 204,
+// };
+// app.use(cors(corsOptions));
+//
+
+app.use(cors());
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
